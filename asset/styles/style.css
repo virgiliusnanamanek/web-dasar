@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(255, 114, 94, .3);
+    height: 100vh;
+}
+
+nav {
+    background-color: #FF725E;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav .nav-item {
+    display: inline;
+    margin: auto;
+}
+
+.nav-list .nav-item {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #03045E;
+    font-weight: bold;
+}
+
+nav .nav-links:hover {
+    font-weight: 500;
+    border-bottom: 2px solid #fff;
+}
+
+.nav-list {
+    text-align: center;
+}
+
+.desc {
+    display: flex;
+    padding-top: 7%;
+}
+
+.ilust {
+    text-align: right;
+    height: 450px;
+    padding-left: 25px;
+}
+
+.ilustrasi {
+    flex-basis: 50%;
+}
+
+.judul {
+    flex-basis: 50%;
+    text-align: start;
+    padding-right: 8%;
+}
+
+.judul-desc {
+    font-size: 15px;
+}
+
+.judul-btn {
+    background-color: #FF725E;
+    padding: 14px 30px;
+    border: 1px solid #FF725E;
+    border-radius: 4px;
+    margin-right: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.judul-btn:hover {
+    background-color: #fff;
+    color: #FF725E;
+}
+
+.unduh {
+    background-color: #fff;
+    padding: 14px 30px;
+    border: 1px solid #FF725E;
+    border-radius: 4px;
+    color: #FF725E;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+
+}
+
+.unduh:hover {
+    background-color: #FF725E;
+    color: #fff
+}
+
+.unduh-list {
+    display: none;
+    position: absolute;
+    background-color: #FF725E;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.unduh-list a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #FF725E
+}
+
+.lihat {
+    display: block;
+}
+
+#judul-nama {
+    color: #03045E;
+    font-weight: 800;
+    font-size: 3em;
+}
+
+#jurusan {
+    font-weight: bold;
+}
+
+.card {
+    box-shadow: rgb(255, 114, 94, 0.5) 2px 2px 3px;
+    margin-right: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: rgb(255, 114, 94) 2px 2px 3px;
+    transition: all ease-out .2s;
+}
+
+.content-tentang {
+    padding: 3% 8% 8% 8%;
+}
+
+#content-tentang-judul {
+    padding-top: 20px;
+}
+
+.foto-profil {
+    border-radius: 5%;
+    border: 3px solid #FF725E;
+}
+
+.profil {
+    width: 200px;
+    height: 200px;
+}
+
+.content-tentang {
+    display: flex;
+    padding-top: 8%;
+    background-color: #fff;
+}
+
+.desc-judul {
+    font-size: 2.5em;
+    color: #03045E;
+}
+
+.desc-subjudul {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #03045E;
+}
+
+.desc-parag {
+    font-size: 1.2em;
+    color: #03045E;
+}
+
+.content-tentang-desc {
+    flex-basis: 3;
+    margin-right: 20px;
+    padding-right: 5%;
+}
+
+aside {
+    flex-grow: 1;
+    background-color: #fff;
+    box-shadow: rgb(255, 114, 94) 2px 2px 3px;
+    padding: 14px 32px;
+    border-radius: 4px;
+}
+
+.creator {
+    text-align: center;
+    color: #03045E;
+}
+
+.tentang-img {
+    height: 350px;
+    width: 350px;
+}
+
+.fitur {
+    background-image: url("../img/fitur.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.content-fitur {
+    display: flex;
+    padding: 3% 8% 8% 8%;
+}
+
+.fitur-judul {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 2.5em;
+    color: #03045E;
+}
+
+.content-testimoni {
+    display: flex;
+    padding: 3% 8% 8% 8%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.testimoni-judul {
+    font-size: 2.5em;
+    color: #03045E;
+    text-align: center;
+}
+
+.testimoni-card {
+    box-shadow: rgb(255, 114, 94) 4px 4px 6px;
+    margin-right: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.testimoni-text {
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+.testimoni-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #FF725E;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nama-user {
+    text-align: center;
+}
+
+footer {
+    background-color: #000;
+}
+
+.atas {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.logo {
+    height: 300px;
+    width: 300px;
+}
+
+.jarak {
+    margin-right: 32px;
+}
+
+.footer-list {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-item {
+    list-style: none;
+}
+
+.copyright {
+    text-align: center;
+    padding: 16px 0 0 0;
+}
+
+.footer-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-subscribe {
+    background-color: #FF725E;
+    padding: 10px 16px;
+    border: 1px solid #FF725E;
+    border-radius: 4px;
+    margin-right: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input {
+    background-color: #fff;
+    padding: 10px 16px;
+    border: 1px solid #FF725E;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.kop {
+    color: #FF725E;
+}
+
+.bawah {
+    background-color: #fff;
+}
+
+@media screen and (max-width: 513px) {
+    header {
+        height: 100%
+    }
+
+    nav .nav-item {
+        font-size: 10px;
+        padding-left: 15px;
+        margin-left: 0;
+    }
+
+    .nav-list .nav-item {
+        margin-right: 14px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .nav-list {
+        text-align: left;
+    }
+
+    .tombol {
+        padding-bottom: 5%;
+    }
+
+    .desc {
+        display: block;
+    }
+
+    .desc-subjudul {
+        visibility: hidden;
+        display: none;
+    }
+
+    .judul {
+        text-align: center;
+    }
+
+    #judul-nama {
+        visibility: hidden;
+        display: none;
+    }
+
+    .ilustrasi {
+        padding: 4% 8% 8% 4%;
+        align-items: center;
+    }
+
+    .ilust {
+        width: 100%;
+        /* height: 100%; */
+        padding-top: 8%;
+    }
+
+    .content-tentang-desc {
+        /* padding: 0; */
+        text-align: center;
+    }
+
+    .content-tentang {
+        display: block;
+    }
+
+    .subjudul-app {
+        font-size: 1em;
+    }
+
+    .fitur {
+        background-color: #ff715e60;
+        background-image: none;
+    }
+
+    .card {
+        margin-top: 15px;
+    }
+
+    .content-fitur {
+        display: block;
+    }
+
+    .content-testimoni {
+        display: block;
+    }
+
+    .testimoni-card {
+        margin-top: 15px;
+    }
+
+    .atas {
+        display: block;
+        text-align: center;
+    }
+
+    .btn-subscribe {
+        margin-top: 5%;
+    }
+}

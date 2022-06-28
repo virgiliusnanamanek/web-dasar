@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./asset/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./asset/script/script.js"></script>
+</head>
+
+<body>
+    <header id="beranda">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#beranda" class="nav-links">BERANDA</a></li>
+                <li class="nav-item"><a href="#tentang" class="nav-links">TENTANG</a></li>
+                <li class="nav-item"><a href="#fitur" class="nav-links">FITUR</a></li>
+                <li class="nav-item"><a href="#testimoni" class="nav-links">TESTIMONI</a></li>
+            </ul>
+        </nav>
+        <div class="desc">
+            <div class="ilustrasi">
+                <img src="./asset/img/pana.png" alt="" class="ilust">
+            </div>
+            <div class="judul">
+                <h1 id="judul-nama">iMURAH: Solusi Pembayaran yang Cepat dan Aman untuk Mahasiswa</h1>
+                <h2 class="subjudul-app">Satu aplikasi, semua urusan pembayaran beres </h2>
+                <div class="tombol">
+                    <button class="judul-btn">Buat Akun</button>
+                    <button onclick="keBawah()" class="unduh">Unduh <i class="fa-brands fa-google-play"></i></button>
+                    <div id="keBawah" class="unduh-list">
+                        <a href="#">Versi Platinum</a>
+                        <a href="#">Versi Pro</a>
+                        <a href="#">Versi Gratis</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <article class="content-tentang" id="tentang">
+                <div class="content-tentang-desc">
+                    <h1 class="desc-judul">Sekilas tentang iMURAH</h1>
+                    <h3 class="desc-subjudul">
+                        Aplikasi yang memudahkan mahasiswa dalam melakukan pembayaran dari uang kuliah, transportasi
+                        online sampai marketplace yang ada di Indonesia.
+                    </h3>
+                    <p class="desc-parag">
+                        IMURAH adalah sebuah aplikasi smart yang memberikan Anda layanan pembayaran dan transaksi secara
+                        daring (IMURAH Tunai). Anda juga bisa berkesempatan untuk mengumpulkan poin setiap kali Anda
+                        melakukan transaksi pembayaran melalui IMURAH. Secara umum, IMURAH Tunai dapat digunakan untuk
+                        berbagai macam pembayaran yang telah bekerja sama dengan IMURAH menjadi lebih cepat. Sedangkan
+                        IMURAH Points adalah loyalty rewards bagi yang melakukan transaksi dengan menggunakan IMURAH
+                        Tunai di merchant-merchant rekanan IMURAH. Untuk IMURAH Points sendiri, dapat ditukarkan dengan
+                        berbagai penawaran menarik hingga ditukarkan dengan transaksi di merchant rekanan IMURAH.
+                        IMURAH menawarkan kemudahan transaksi tanpa mengharuskan nasabahnya membawa Tunai terlalu
+                        banyak. Salah satunya cukup dengan menunjukkan aplikasi IMURAH yang didalamnya terdapat saldo
+                        Tunai maupun point.
+                    </p>
+                </div>
+                <aside>
+                    <h3 class="creator">CREATOR</h3>
+                    <div class="foto-profil">
+                        <img src="./asset/img/asidenobg.png" alt="" class="profil">
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <td>Virgilius N. Manek</td>
+                        </tr>
+                        <tr>
+                            <th>Jurusan</th>
+                            <td>Teknik Elektro</td>
+                        </tr>
+                        <tr>
+                            <th>NIM</th>
+                            <td>195114071</td>
+                        </tr>
+                    </table>
+                </aside>
+            </article>
+            <article class="fitur" id="fitur">
+                <h1 class="fitur-judul">FITUR</h1>
+                <div class="content-fitur">
+                    <div class="uang-kuliah card">
+                        <h4>Pembayaran Uang Kuliah</h4>
+                        <p>iMurah bermitra dengan hampir semua perguruan tinggi di seluruh Indonesia sehingga anda dapat
+                            melakukan pembayaran uang kuliah melalui iMurah</p>
+                    </div>
+                    <div class="belanja-online card">
+                        <h4>Pembayaran di Marketplace</h4>
+                        <p>iMurah bermitra dengan semua marketplace yang beroperasi di Indonesia dan telah dipercaya
+                            oleh lebih dari satu juta pengguna</p>
+                    </div>
+                    <div class="trans-online card">
+                        <h4>Pembayaran Transportasi Online</h4>
+                        <p>iMurah bekerjasama dengan segala jenis perusahaan penyedia jasa transportasi online sehingga
+                            anda akan dengan mudah memesan dan melakukan pembayaran tanpa ribet</p>
+                    </div>
+                    <div class="makanan-online card">
+                        <h4>Pembayaran Makanan</h4>
+                        <p>iMurah mengerti bahwa sebagai anak kos seringkali anda malas makan, tenang saja iMurah
+                            memiliki fitur untuk memesan makanan secara online</p>
+                    </div>
+                </div>
+            </article>
+            <article class="testimoni" id="testimoni">
+                <h1 class="testimoni-judul">TESTIMONI</h1>
+                <div class="content-testimoni">
+                    <div class="testimoni-card">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="testimoni-text">
+                            Sebagai anak kos saya cukup malas pergi ke warung terdekat untuk membeli makan. Dengan
+                            iMURAH saya sangat dimudahkan ketika saya ingin membeli makanan. Banyak promonya dan
+                            tentunya pas untuk dompet anak kos. Selain makanan, saya juga serig melakukan pembayaran
+                            uang kuliah dengan iMURAH
+                        </p>
+                        <img src="./asset/img/orang1.jpg" alt="" class="testimoni-img">
+                        <h4 class="nama-user">Siti-Universitas Nusa</h4>
+
+                    </div>
+                    <div class="testimoni-card">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="testimoni-text">
+                            iMURAH adalah aplikasi yang sangat membantu saya dalam banyak hal. Di masa pandemik ini,
+                            banyak hal yang mengharuskan saya untuk tidak keluar dari kos sehingga saya menggunakan
+                            iMurah untuk memesan makanan, kendaraan, membayar uang Kuliah dan berbelanja di marketplace
+                        </p>
+                        <img src="./asset/img/orang2.jpg" alt="" class="testimoni-img">
+                        <h4 class="nama-user">Wulandari-Universitas Cendana</h4>
+                    </div>
+                    <div class="testimoni-card">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="testimoni-text">
+                            Aplikasinya recomended banget untuk anak kos karena ketika melakukan pembayaran ada banyak
+                            promo. Saya sendiri sudah menggunakan iMURAH selama setahun belakangan ini dan hasilnya
+                            adalah saya sangat dimudahkan dalam berbelanja, makan, bepergian dan lain sebagainya.
+                        </p>
+                        <img src="./asset/img/orang3.jpg" alt="" class="testimoni-img">
+                        <h4 class="nama-user">Juminten-Universitas Cendrawasih</h4>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="atas">
+            <div class="mitra jarak">
+                <h4 class="kop">KEMITRAAN</h4>
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="#">Website</a></li>
+                    <li class="footer-item"><a href="#">Media Sosial</a></li>
+                    <li class="footer-item"><a href="#">Branding</a></li>
+                </ul>
+            </div>
+            <div class="footer-tentang jarak">
+                <h4 class="kop">TENTANG</h4>
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="#">Layanan Kami</a></li>
+                    <li class="footer-item"><a href="#">Kebijakan</a></li>
+                </ul>
+            </div>
+            <div class="subscribe jarak">
+                <h4 class="kop">SUBSCRIBE</h4>
+                <form>
+                    <input type="text" placeholder="alamat email">
+                    <button class="btn-subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="bawah">
+            <p class="copyright"><i class="fas fa-copyright"></i> 2022 Copyright: Virgilius Nana Manek</p>
+        </div>
+    </footer>
+</body>
+
+</html>
